@@ -1,0 +1,53 @@
+.navbar .sitename{
+    font-size: 30px;
+    margin: 0;
+    font-weight: 700;
+    color: #2c4964;
+}
+
+.navbar .nav-item {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.nav-item .active span {
+  color: rgba(0, 0, 255, 0.854);
+}
+.nav-item .nav-item-uline {
+  width: 100%;
+  height: 2px;
+  background-color: rgba(0, 0, 255, 0.854);
+}
+.nav-item .nav-item-uline-hover {
+  width: 0%;
+  height: 2px;
+  background-color: rgba(0, 0, 255, 0.854);
+}
+
+.btn-appoint:hover {
+  background-color: aqua;
+  color: black;
+  text-shadow: 1px 0 0;
+  transition: 0.3s;
+}
+
+.navbar .nav-item:hover {
+  span {
+    color: rgba(0, 0, 255, 0.854);
+    text-shadow: 1px 0 0;
+    transition: 0.3s;
+  }
+  .nav-item-uline-hover {
+    width: 100%;
+    transition:width 0.3s ease;
+  }
+  @media (width < 992px) {
+    background-color: antiquewhite;
+  }
+}
+
+.navbar-toggler{
+    border: none;
+    padding-left: 0;
+    padding-right: 0;
+}
