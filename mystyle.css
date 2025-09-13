@@ -51,3 +51,45 @@
     padding-left: 0;
     padding-right: 0;
 }
+
+/* -------------------HEADER------------- */
+header{
+  margin-top: 63px;
+  background-image: url(./img/header-doctor.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+header h2{
+  font-size: 48px;
+  font-weight: 700;
+  color: #2c4964;
+}
+.head-intro p{
+  font-size: 24px;
+}
+.head-item{
+  padding: 30px;
+  background-color: rgba(240, 248, 255, 0.791);
+  
+}
+.head-item h4{
+  font-size: 20px;
+  font-weight: 700;
+  color: #2c4964;
+  margin: 10px 0 20px;
+}
+.head-item__icon{
+  font-size: 40px;
+  color: #1977cc;
+}
+.btn-more{
+  background-color:rgb(13, 177, 253);
+}
+.btn-more:hover{
+  background-color: white;
+  span{
+    color: #2c4964;
+  }
+  transition: 0.3s;
+}
