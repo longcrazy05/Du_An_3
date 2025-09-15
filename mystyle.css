@@ -65,6 +65,7 @@ header h2{
   font-weight: 700;
   color: #2c4964;
 }
+
 .head-intro p{
   font-size: 24px;
 }
@@ -83,6 +84,13 @@ header h2{
   font-size: 40px;
   color: #1977cc;
 }
+
+.head-item:hover:not(.skip){
+  translate: 0 -30px;
+  padding: 20px;
+  border: 10px solid #1977cc;
+  transition: translate 0.5s;
+}
 .btn-more{
   background-color:rgb(13, 177, 253);
 }
@@ -92,4 +100,55 @@ header h2{
     color: #2c4964;
   }
   transition: 0.3s;
+}
+
+/* ------------ABOUT---------- */
+.about-icon{
+  font-size: 48px;
+  color: #1977cc;
+}
+
+.about h3,h4{
+  color: #2c4964;
+  font-weight: 700;
+}
+.about{
+  h3{
+    font-size: 2rem;
+  }
+  h4{
+    font-style: 18px;
+  }
+  
+}
+.about-detail{
+  background-color: #f1f7fc;
+}
+
+
+.about-detail__icon{
+  
+  width: 54px;
+  height: 54px;
+  background-color: #1977cc;
+  border-radius: 50%;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+}
+.about-detail i{
+  font-size: 32px;
+  color: white;
+}
+
+.about-detail__box{
+  padding: 30px;
+  margin-top: -27px;
+  background-color: #fff;
+}
+.about-detail__num{
+  font-size: 32px;
+  color: #2c4964;
+  font-weight: 700;
+  margin: 10px 0;
 }
