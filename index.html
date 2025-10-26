@@ -57,52 +57,101 @@
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <span class="navbar-toggler-icon"></span>
+            <label for="menu-checkbox"
+              ><span class="navbar-toggler-icon"></span
+            ></label>
           </button>
         </div>
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-auto">
-            <li class="nav-item">
-              <a
-                class="nav-link active d-inline-block"
-                aria-current="page"
-                href="#home"
-                ><span>Home</span>
-                <div class="nav-item-uline mt-1"></div>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link d-inline-block" href="#about">
-                <span>About</span>
-                <div class="nav-item-uline-hover mt-1"></div>
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-auto mt-lg-0 mt-1">
+            <li
+              class="nav-item"
+              data-bs-toggle="collapse"
+              data-bs-target=".navbar-collapse.show"
+            >
+              <a class="nav-link active" aria-current="page" href="#home">
+                <div class="nav-item__content">
+                  <span class="d-inline-block">
+                    Home
+                    <span class="nav-item-uline mt-1 d-block"></span>
+                  </span>
+                </div>
               </a>
             </li>
 
-            <li class="nav-item">
-              <a class="nav-link d-inline-block" href="#service"
-                ><span>Service</span>
-                <div class="nav-item-uline-hover mt-1"></div
-              ></a>
+            <li
+              class="nav-item"
+              data-bs-toggle="collapse"
+              data-bs-target=".navbar-collapse.show"
+            >
+              <a class="nav-link" href="#about">
+                <div class="nav-item__content">
+                  <span class="d-inline-block">
+                    About
+                    <div class="nav-item-uline-hover mt-1"></div>
+                  </span>
+                </div>
+              </a>
             </li>
 
-            <li class="nav-item">
-              <a class="nav-link d-inline-block" href="#department"
-                ><span>Departments</span>
-                <div class="nav-item-uline-hover mt-1"></div
-              ></a>
+            <li
+              class="nav-item"
+              data-bs-toggle="collapse"
+              data-bs-target=".navbar-collapse.show"
+            >
+              <a class="nav-link" href="#service">
+                <div class="nav-item__content">
+                  <span class="d-inline-block">
+                    Service
+                    <div class="nav-item-uline-hover mt-1"></div>
+                  </span>
+                </div>
+              </a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link d-inline-block" href="#doctor"
-                ><span>Doctor</span>
-                <div class="nav-item-uline-hover mt-1"></div
-              ></a>
+
+            <li
+              class="nav-item"
+              data-bs-toggle="collapse"
+              data-bs-target=".navbar-collapse.show"
+            >
+              <a class="nav-link" href="#department">
+                <div class="nav-item__content">
+                  <span class="d-inline-block">
+                    Departments
+                    <div class="nav-item-uline-hover mt-1"></div>
+                  </span>
+                </div>
+              </a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link d-inline-block" href="#contact"
-                ><span>Contact</span>
-                <div class="nav-item-uline-hover mt-1"></div
-              ></a>
+            <li
+              class="nav-item"
+              data-bs-toggle="collapse"
+              data-bs-target=".navbar-collapse.show"
+            >
+              <a class="nav-link" href="#doctor">
+                <div class="nav-item__content">
+                  <span class="d-inline-block"
+                    >Doctor
+                    <div class="nav-item-uline-hover mt-1"></div>
+                  </span>
+                </div>
+              </a>
+            </li>
+
+            <li
+              class="nav-item"
+              data-bs-toggle="collapse"
+              data-bs-target=".navbar-collapse.show"
+            >
+              <a class="nav-link" href="#contact">
+                <div class="nav-item__content">
+                  <span class="d-inline-block"
+                    >Contact
+                    <div class="nav-item-uline-hover mt-1"></div>
+                  </span>
+                </div>
+              </a>
             </li>
           </ul>
         </div>
@@ -115,10 +164,21 @@
       </div>
     </nav>
 
+    <!-- <input
+      type="checkbox"
+      name="menu-checkbox"
+      id="menu-checkbox"
+      class="menu-checkbox"
+      hidden
+      data-bs-toggle="collapse"
+      data-bs-target=".navbar-collapse.show"
+    />
+    <label for="menu-checkbox" class="menu-overlay"></label> -->
+
     <!-- header -->
-    <header class="">
+    <header class="" id="home">
       <div class="container">
-        <div class="pt-5 head-intro">
+        <div class="pt-5 head-intro home">
           <h2 class="animate__animated animate__backInDown">
             WELCOME TO MEDILAB
           </h2>
@@ -254,11 +314,15 @@
           <div class="row">
             <div class="col-md-6 col-lg-3 mb-4 mb-lg-0">
               <div class="about-card">
-                <div class="about-detail__icon flex-shrink-0 d-flex justify-content-center align-items-center ">
+                <div
+                  class="about-detail__icon flex-shrink-0 d-flex justify-content-center align-items-center"
+                >
                   <i class="fa-solid fa-user-doctor"></i>
                 </div>
 
-                <div class="about-detail__box rounded d-flex flex-column align-items-center">
+                <div
+                  class="about-detail__box rounded d-flex flex-column align-items-center"
+                >
                   <span class="about-detail__num">85</span>
                   <p class="mb-0">Doctor</p>
                 </div>
@@ -267,11 +331,15 @@
 
             <div class="col-md-6 col-lg-3 mb-4 mb-lg-0">
               <div class="about-card">
-                <div class="about-detail__icon flex-shrink-0 d-flex justify-content-center align-items-center ">
+                <div
+                  class="about-detail__icon flex-shrink-0 d-flex justify-content-center align-items-center"
+                >
                   <i class="bi bi-hospital"></i>
                 </div>
 
-                <div class="about-detail__box rounded d-flex flex-column align-items-center">
+                <div
+                  class="about-detail__box rounded d-flex flex-column align-items-center"
+                >
                   <span class="about-detail__num">18</span>
                   <p class="mb-0">Departments</p>
                 </div>
@@ -279,11 +347,15 @@
             </div>
             <div class="col-md-6 col-lg-3 mb-4 mb-lg-0">
               <div class="about-card">
-                <div class="about-detail__icon flex-shrink-0 d-flex justify-content-center align-items-center ">
+                <div
+                  class="about-detail__icon flex-shrink-0 d-flex justify-content-center align-items-center"
+                >
                   <i class="fas fa-flask"></i>
                 </div>
 
-                <div class="about-detail__box rounded d-flex flex-column align-items-center">
+                <div
+                  class="about-detail__box rounded d-flex flex-column align-items-center"
+                >
                   <span class="about-detail__num">12</span>
                   <p class="mb-0">Research Labs</p>
                 </div>
@@ -291,11 +363,15 @@
             </div>
             <div class="col-md-6 col-lg-3">
               <div class="about-card">
-                <div class="about-detail__icon flex-shrink-0 d-flex justify-content-center align-items-center ">
+                <div
+                  class="about-detail__icon flex-shrink-0 d-flex justify-content-center align-items-center"
+                >
                   <i class="fas fa-award"></i>
                 </div>
 
-                <div class="about-detail__box rounded d-flex flex-column align-items-center">
+                <div
+                  class="about-detail__box rounded d-flex flex-column align-items-center"
+                >
                   <span class="about-detail__num">150</span>
                   <p class="mb-0">Awards</p>
                 </div>
